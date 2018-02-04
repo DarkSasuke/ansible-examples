@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: true
+  gather_facts: no
+  tasks:
+    - name: disable setlinux
+      command: /sbin/setenforce 0
+
+ 
